@@ -1,12 +1,12 @@
 # Locked dependency versions for reproducing the paper environment.
-# NOTE: fill in the exact versions used by the author's runtime environment
-# (run `pip freeze` in that environment and replace the placeholders below).
+# Based on the author's runtime environment, which mirrors a cloud GPU instance
+# with PyTorch 2.8.0 on Python 3.12 / CUDA 12.8.
 # requirements.txt keeps the loose lower bounds for flexible installs;
 # requirements-lock.txt pins the exact combination used for the reported results.
 
-numpy==TODO
-pandas==TODO
-scipy==TODO
-scikit-learn==TODO
-torch==TODO
-networkx==TODO
+numpy==2.4.6
+pandas==3.0.5
+scipy==1.17.1
+scikit-learn==1.8.0
+torch==2.8.0
+networkx==3.6.1

@@ -1,4 +1,4 @@
-# Computers & Electrical Engineering — Link Prediction with a Gated Regularized Graph Auto-Encoder
+# Region-Adaptive Graph Attention for Citation-Network Link Prediction
 
 Code and numerical results accompanying the manuscript submitted to *Computers & Electrical Engineering*.
 
