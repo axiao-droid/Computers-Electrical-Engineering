@@ -1,3 +1,4 @@
+# Deprecated: not used for reported paper results. See rerun_fair_protocol.py
 # Fairness check: GAT / GATv2 with wd=1e-4 on Cora and CiteSeer.
 import os, sys, time
 _HERE = os.path.dirname(os.path.abspath(__file__))

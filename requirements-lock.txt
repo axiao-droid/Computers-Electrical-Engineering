@@ -1,0 +1,12 @@
+# Locked dependency versions for reproducing the paper environment.
+# NOTE: fill in the exact versions used by the author's runtime environment
+# (run `pip freeze` in that environment and replace the placeholders below).
+# requirements.txt keeps the loose lower bounds for flexible installs;
+# requirements-lock.txt pins the exact combination used for the reported results.
+
+numpy==TODO
+pandas==TODO
+scipy==TODO
+scikit-learn==TODO
+torch==TODO
+networkx==TODO

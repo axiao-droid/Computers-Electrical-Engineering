@@ -1,3 +1,4 @@
+# Deprecated: not used for reported paper results. See rerun_fair_protocol.py
 # __mh_autobootstrap_syspath__
 import os as _mh_os, sys as _mh_sys
 _mh_here = _mh_os.path.dirname(_mh_os.path.abspath(__file__))

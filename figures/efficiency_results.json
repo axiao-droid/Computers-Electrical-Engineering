@@ -1,0 +1,32 @@
+{
+  "GCN": {
+    "n_params": 10336,
+    "train_time_s": 3.903660615285238,
+    "params_vs_gat": 0.24884437596302003,
+    "time_vs_gat": 0.3279056253998066
+  },
+  "GraphSAGE": {
+    "n_params": 20672,
+    "train_time_s": 4.6930467287699384,
+    "params_vs_gat": 0.49768875192604006,
+    "time_vs_gat": 0.39421368153834213
+  },
+  "GAT": {
+    "n_params": 41536,
+    "train_time_s": 11.904829661051432,
+    "params_vs_gat": 1.0,
+    "time_vs_gat": 1.0
+  },
+  "VGAE": {
+    "n_params": 12416,
+    "train_time_s": 5.7620634237925215,
+    "params_vs_gat": 0.29892141756548535,
+    "time_vs_gat": 0.4840105728386892
+  },
+  "RA-GAT": {
+    "n_params": 41581,
+    "train_time_s": 13.724743525187174,
+    "params_vs_gat": 1.0010833975346687,
+    "time_vs_gat": 1.1528718945126855
+  }
+}

@@ -1,3 +1,4 @@
+# Deprecated: not used for reported paper results. See rerun_fair_protocol.py
 # Final 3-seed RA-GAT retrain: identity-init, wd=1e-4 on both public graphs.
 # Cora wd=1e-4 was selected by per-seed validation AUC.
 import os, sys, json, time

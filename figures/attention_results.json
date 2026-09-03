@@ -1,0 +1,40 @@
+{
+  "strata": [
+    {
+      "bucket": "1-2",
+      "n_nodes": 977,
+      "mean_attn_entropy": 0.8889726400375366,
+      "mean_gate": 0.4874701201915741,
+      "mean_temperature": 1.3450435400009155
+    },
+    {
+      "bucket": "3-4",
+      "n_nodes": 861,
+      "mean_attn_entropy": 1.4253265857696533,
+      "mean_gate": 0.5325273275375366,
+      "mean_temperature": 1.2649949789047241
+    },
+    {
+      "bucket": "5-8",
+      "n_nodes": 536,
+      "mean_attn_entropy": 1.8656730651855469,
+      "mean_gate": 0.5695273280143738,
+      "mean_temperature": 1.2147046327590942
+    },
+    {
+      "bucket": "9-16",
+      "n_nodes": 127,
+      "mean_attn_entropy": 2.423724412918091,
+      "mean_gate": 0.6142163276672363,
+      "mean_temperature": 1.140923261642456
+    },
+    {
+      "bucket": "17+",
+      "n_nodes": 42,
+      "mean_attn_entropy": 3.2184085845947266,
+      "mean_gate": 0.6539050340652466,
+      "mean_temperature": 1.129408836364746
+    }
+  ],
+  "heads": 4
+}

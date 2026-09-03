@@ -1,3 +1,4 @@
+# Deprecated: not used for reported paper results. See rerun_fair_protocol.py
 # Extend public Cora/CiteSeer runs with seeds 45 and 46 under the frozen protocol.
 # Baselines: default Adam (lr=0.01, wd=5e-4).
 # RA-GAT: identity-init extra operators; Cora lr=0.01 wd=1e-4; CiteSeer lr=0.005 wd=1e-4.

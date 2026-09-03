@@ -1,3 +1,4 @@
+# Deprecated: not used for reported paper results. See rerun_fair_protocol.py
 # Train GraphSAGE / GAT / GATv2 / RA-GAT on public Cora and CiteSeer.
 import os, sys, json, time
 _HERE = os.path.dirname(os.path.abspath(__file__))

@@ -1,3 +1,4 @@
+# Deprecated: not used for reported paper results. See rerun_fair_protocol.py
 # Sweep RA-GAT on public Cora / CiteSeer (seed 42), then retrain best configs.
 import os, sys, json, time
 _HERE = os.path.dirname(os.path.abspath(__file__))

@@ -1,3 +1,4 @@
+# Deprecated: not used for reported paper results. See rerun_fair_protocol.py
 # Retrain RA-GAT on public Cora and CiteSeer with identity-init (3 seeds).
 # Configs selected by seed-42 validation AUC, not test AUC.
 import os, sys, json, time
