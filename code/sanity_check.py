@@ -37,9 +37,25 @@ def check(name, val):
         if val > 1:
             errors.append(f"{name} = {val} p>1 impossible")
 
+PAIRED_LEAF_KEYS = {'mean', 'lo', 'hi', 'n'}
+
+def _is_paired_leaf(o):
+    """Paired-difference record like {'mean':..., 'lo':..., 'hi':..., 'n':...}
+    (e.g. 'RA-GAT - GAT / AUC' under real_citation_results['paired']). Such
+    differences may legitimately be negative, so sign/range checks must not
+    apply to their mean/lo/hi fields - only absolute metrics are sign-checked."""
+    return isinstance(o, dict) and o.keys() <= PAIRED_LEAF_KEYS and 'mean' in o
+
 def walk(o, p=""):
     if isinstance(o, dict):
-        for k, v in o.items(): walk(v, f"{p}.{k}")
+        paired_leaf = _is_paired_leaf(o)
+        for k, v in o.items():
+            if paired_leaf:
+                # Skip sign/range checks for paired-difference mean/lo/hi.
+                if k != 'n' and isinstance(v, float) and (math.isnan(v) or math.isinf(v)):
+                    errors.append(f"{p}.{k} is NaN/Inf")
+                continue
+            walk(v, f"{p}.{k}")
     elif isinstance(o, list):
         for i, v in enumerate(o):
             if isinstance(v, (dict, list)): walk(v, f"{p}[{i}]")
