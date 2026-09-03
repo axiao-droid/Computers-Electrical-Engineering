@@ -55,8 +55,6 @@ def attention_by_region(save, load_dataset, run_once):
         raw = F.leaky_relu(raw, 0.2)
         tau = F.softplus(model.c1.temp(region)) + 0.5
         raw = raw * tau[row]
-        dens = region[:, 1].unsqueeze(1)
-        raw = raw + model.c1.density_w.unsqueeze(0) * dens[row]
         from utils import scatter_softmax
         alpha = scatter_softmax(raw, row, n).mean(1)  # avg over heads [E]
         # entropy per target node

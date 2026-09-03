@@ -1,12 +1,15 @@
-# Locked dependency versions for reproducing the paper environment.
-# Based on the author's runtime environment, which mirrors a cloud GPU instance
-# with PyTorch 2.8.0 on Python 3.12 / CUDA 12.8.
+# Locked dependency versions recorded for the CPU-only environment described in
+# Section 4.7 of the paper: Windows 11 (build 26200), 12th Gen Intel Core
+# i5-12450H, 16 GB RAM, no GPU (torch.cuda.is_available() = False) on
+# Python 3.11.9 with PyTorch 2.13.0+cpu.
 # requirements.txt keeps the loose lower bounds for flexible installs;
-# requirements-lock.txt pins the exact combination used for the reported results.
+# requirements-lock.txt records the exact CPU-only build used in the reported runs.
+# Install torch's CPU build with:
+#   pip install torch==2.13.0+cpu --index-url https://download.pytorch.org/whl/cpu
 
 numpy==2.4.6
 pandas==3.0.5
 scipy==1.17.1
 scikit-learn==1.8.0
-torch==2.8.0
+torch==2.13.0+cpu
 networkx==3.6.1
